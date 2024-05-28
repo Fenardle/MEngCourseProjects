@@ -1,0 +1,94 @@
+header {
+  background-image: url('../public/img/header.png'); /* Add this line */
+  background-size: cover;
+  background-color: #333; /* You might want to adjust or remove this line */
+  color: #fafafa;
+  text-align: center;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Rest of your CSS */
+
+
+header h1 {
+    margin-left: 1rem;
+    font-family: 'Papyrus', sans-serif;
+    font-size: 4rem;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+nav ul li {
+    font-family: 'Papyrus', sans-serif;
+    margin-right: 20px;
+    padding: 0.5rem;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 4px;
+    font-weight: bolder; /* Make font bolder */
+    color: #f8f8f8;
+ 
+}
+
+nav ul li:hover {
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+    text-decoration: underline;
+}
+
+nav ul li.sign-in {
+    margin-left: auto;
+    background-color: #007bff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav ul li.sign-in:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 0.5rem 0; /* Adjust padding for smaller screens */
+  }
+
+  header h1 {
+    margin: 0.5rem;
+    font-size: 1.5rem; /* Smaller font size for title */
+  }
+
+  nav ul {
+    padding: 0;
+    margin-top: 0.5rem;
+  }
+
+  nav ul li {
+    margin-right: 10px; /* Reduce space between menu items */
+  }
+}
+
+/* Further adjustments for mobile phones */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.2rem; /* Even smaller font size for mobile phones */
+  }
+}

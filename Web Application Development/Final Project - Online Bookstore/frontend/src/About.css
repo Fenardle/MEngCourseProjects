@@ -1,0 +1,22 @@
+.about {
+    padding: 2rem;
+    background-color: white;
+    margin: 2rem auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about h2 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-family: 'Papyrus', sans-serif;
+  }
+  
+  .about p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    font-family: 'Papyrus', sans-serif;
+  }
+  

@@ -1,0 +1,120 @@
+#book-catalog {
+    font-family: 'Papyrus', sans-serif;
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid #ddd;
+    margin: 1rem;
+}
+
+#book-catalog h2 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+#book-search {
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%; /* Full-width on smaller screens */
+}
+
+#book-catalog button {
+    padding: 0.5rem 1rem;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#book-catalog button:hover {
+    background-color: #4cae4c;
+}
+
+#books-list {
+    margin-top: 1rem;
+}
+
+.book-item {
+    display: flex;
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.book-item img {
+    width: 80%; /* Adjust width for smaller screens */
+    height: auto;
+    margin-bottom: 0.5rem; /* Add margin below the image */
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Responsive columns */
+    gap: 15px; /* Adjust gap for smaller screens */
+    margin: 20px 0;
+}
+
+.category-icon {
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    border: none;
+}
+
+.category-icon:hover {
+    transform: scale(1.1); /* Adjust hover effect */
+}
+
+.category-image img {
+    object-fit: cover;
+}
+
+.category-icon p {
+    font-size: 12px; /* Smaller font size for smaller screens */
+}
+
+/* Adjustments for tablets and larger devices */
+@media (min-width: 768px) {
+    .book-item {
+        flex-direction: row; /* Horizontal layout for larger screens */
+        align-items: start;
+    }
+
+    .book-item img {
+        width: 100px; /* Fixed width for larger screens */
+        margin-right: 1rem;
+        margin-bottom: 0;
+    }
+
+    .category-icon {
+        width: 110px;
+        height: 150px;
+    }
+
+    .category-icon p {
+        font-size: 14px;
+    }
+
+    #book-search {
+        width: auto; /* Auto width on larger screens */
+    }
+}
+
+/* Further adjustments for desktops */
+@media (min-width: 1024px) {
+    .categories {
+        grid-template-columns: repeat(4, 1fr); /* 4 columns on desktop */
+    }
+}

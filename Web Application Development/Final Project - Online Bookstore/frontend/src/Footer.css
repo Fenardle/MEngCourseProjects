@@ -1,0 +1,51 @@
+footer {
+    background-color: #1e1f20; /* Dark background for contrast */
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem 0;
+    font-family: 'Papyrus', sans-serif;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  }
+  
+  footer p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+  }
+  
+  footer p.contact-info {
+    font-weight: bold;
+    color: #4caf50; /* Slightly brighter color for emphasis */
+  }
+  
+  footer p.email {
+    font-style: italic;
+    color: #ebe2e2; /* Lighter color for distinction */
+  }
+  
+  footer p.copy-right {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: #e6dbdb; /* Muted color for less emphasis */
+  }
+
+  @media (max-width: 768px) {
+    footer {
+      padding: 1rem 0; /* Smaller padding for tablets and smaller devices */
+    }
+  
+    footer p {
+      font-size: 0.8rem; /* Smaller font size for text */
+    }
+  }
+  
+  /* Further adjustments for mobile phones */
+  @media (max-width: 480px) {
+    footer {
+      padding: 0.5rem 0; /* Even smaller padding for mobile phones */
+    }
+  
+    footer p {
+      font-size: 0.7rem; /* Even smaller font size for text */
+    }
+  }
+  

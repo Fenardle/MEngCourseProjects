@@ -1,0 +1,47 @@
+.sign-in {
+    max-width: 300px;
+    margin: 2rem auto;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .sign-in input {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .sign-in button {
+    width: 100%;
+    padding: 0.7rem;
+    margin-top: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .sign-in button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .forgot-password {
+    cursor: pointer;
+    color: #007bff;
+    margin: 1rem 0;
+  }
+  
+  .sign-up-link {
+    margin-top: 1rem;
+  }
+  
+  .sign-up-link span {
+    color: #007bff;
+    cursor: pointer;
+  }
+  

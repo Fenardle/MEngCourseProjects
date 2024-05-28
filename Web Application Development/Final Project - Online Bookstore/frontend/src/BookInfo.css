@@ -1,0 +1,61 @@
+.book-info {
+  display: flex;
+  align-items: flex-start;
+  padding: 2rem;
+  background-color: #ffffff; /* Brighter background */
+  margin: 2rem auto;
+  border: 1px solid #d0d0d0; /* Lighter border */
+  border-radius: 10px; /* Rounded borders */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  max-width: 800px;
+}
+
+.book-info-image {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px; /* Rounded image corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.book-info-details {
+  flex-grow: 1;
+  padding-left: 2rem; /* Increased padding */
+}
+
+.book-info-details h3 {
+  font-size: 1.8rem; /* Larger title */
+  margin-top: 0;
+  color: #333;
+  font-weight: 600; /* Bolder font weight */
+}
+
+.book-info-details p {
+  font-size: 1.1rem; /* Slightly larger text */
+  color: #555; /* Darker text color */
+  line-height: 1.6; /* Improved line height */
+  margin-bottom: 1rem; /* Increased margin */
+  overflow-wrap: break-word;
+}
+
+.book-info-details button {
+  padding: 12px 24px; /* Larger padding */
+  margin: 0 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px; /* Slightly rounded buttons */
+  cursor: pointer;
+  transition: background-color 0.2s, box-shadow 0.2s;
+  font-weight: 500; /* Medium font weight */
+  letter-spacing: 0.5px; /* Subtle letter spacing */
+}
+
+.book-info-details button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+.book-info-details button:first-of-type {
+  margin-right: 0.5rem;
+}

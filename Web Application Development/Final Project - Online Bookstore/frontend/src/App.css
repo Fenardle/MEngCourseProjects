@@ -1,0 +1,48 @@
+/* Your existing CSS */
+body {
+  font-family: 'Papyrus', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* ... other styles ... */
+
+/* Add CSS for Book Catalog */
+#book-catalog {
+  padding: 1rem;
+  background-color: white;
+  border: 1px solid #ddd;
+}
+
+#books-list div {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+/* ... remaining styles ... */
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  #book-catalog {
+    padding: 0.5rem; /* Smaller padding for tablets and smaller devices */
+  }
+
+  #books-list div {
+    padding: 0.25rem; /* Adjust padding for book list items */
+    font-size: 0.9rem; /* Smaller font size */
+  }
+}
+
+/* Further adjustments for mobile phones */
+@media (max-width: 480px) {
+  #book-catalog {
+    padding: 0.25rem; /* Even smaller padding for mobile phones */
+  }
+
+  #books-list div {
+    padding: 0.2rem; /* Adjust padding for book list items */
+    font-size: 0.8rem; /* Even smaller font size */
+  }
+}
